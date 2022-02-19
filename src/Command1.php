@@ -20,7 +20,7 @@ class Command1 extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $line = 'Hello, ' . $input->getArgument('something'); 
+        $line = 'Привет, ' . $input->getArgument('something'); 
         $output->writeln($line);
 
         return Command::SUCCESS;
